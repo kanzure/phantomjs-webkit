@@ -6,6 +6,7 @@
 
 TEMPLATE = subdirs
 CONFIG += ordered
+CONFIG += staticlib
 
 LLIntOffsetsExtractor.file = LLIntOffsetsExtractor.pro
 LLIntOffsetsExtractor.makefile = Makefile.LLIntOffsetsExtractor

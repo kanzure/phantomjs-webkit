@@ -6,6 +6,8 @@
 
 TEMPLATE = subdirs
 
+CONFIG += staticlib
+
 derived_sources.file = DerivedSources.pri
 target.file = Target.pri
 

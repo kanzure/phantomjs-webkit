@@ -1,3 +1,5 @@
+CONFIG += staticlib
+
 SOURCES += \
     $$PWD/qt/Api/qwebframe.cpp \
     $$PWD/qt/Api/qgraphicswebview.cpp \
