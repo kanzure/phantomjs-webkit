@@ -8,6 +8,8 @@
 TEMPLATE = subdirs
 CONFIG += ordered
 
+QMAKE_CXXFLAGS = -fpermissive
+
 !equals(QT_MAJOR_VERSION, 5): error("Building WebKit with Qt versions older than 5.0 is not supported.")
 
 WTF.file = Source/WTF/WTF.pro

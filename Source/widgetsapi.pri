@@ -10,6 +10,10 @@ load(qt_build_config)
 TEMPLATE = lib
 TARGET = QtWebKitWidgets
 
+QMAKE_CXXFLAGS -= -Werror
+QMAKE_CXXFLAGS -= -Wreturn-type
+QMAKE_CXXFLAGS -= -Werror=return-type
+
 # This is relied upon by our export macros and seems not to be properly
 # defined by the logic in qt_module.prf as it should
 DEFINES += QT_BUILD_WEBKITWIDGETS_LIB
