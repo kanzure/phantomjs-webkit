@@ -29,6 +29,8 @@
 #ifndef FastAllocBase_h
 #define FastAllocBase_h
 
+#define NEW_H <new>
+
 // Provides customizable overrides of fastMalloc/fastFree and operator new/delete
 //
 // Provided functionality:
@@ -84,7 +86,7 @@
 //    fastDeleteArray(objectArrayPtr);
 //
 
-#include <new>
+//##include <new>
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>

@@ -2,11 +2,28 @@
 <repository version="1.2"
             xmlns="http://www.gtk.org/introspection/core/1.0"
             xmlns:c="http://www.gtk.org/introspection/c/1.0">
-  <namespace name="JavaScriptCore" version="@WEBKITGTK_API_VERSION@" 
-             shared-library="javascriptcoregtk-@WEBKITGTK_API_VERSION@"
+
+  <include name="GObject" version="2.0"/>
+
+  <package name="javascriptcoregtk-3.0"/>
+
+  <!-- this is at /usr/include/webkitgtk-3.0/JavaScriptCore/JavaScript.h -->
+  <c:include name="JavaScriptCore/JavaScript.h" />
+
+  <namespace name="JavaScriptCore" version="3.0"
+             shared-library="javascriptcoregtk-3.0.so.0"
              c:identifier-prefixes="JS"
              c:symbol-prefixes="JS">
-    <record name="GlobalContext" c:type="JSGlobalContextRef" foreign="1"/>
-    <record name="Value" c:type="JSValueRef" foreign="1"/>
+    <record name="GlobalContext" c:type="JSGlobalContextRef"/>
+    <record name="Value" c:type="JSValueRef"/>
+    <record name="Object" c:type="JSObjectRef"/>
+    <function name="EvaluateScript" c:identifier="JSEvaluateScript">
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+      </parameters>
+    </function>
+
   </namespace>
 </repository>

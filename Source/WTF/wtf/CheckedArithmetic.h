@@ -30,7 +30,7 @@
 #include <wtf/EnumClass.h>
 #include <wtf/TypeTraits.h>
 
-#include <limits>
+//#include <limits>
 #include <stdint.h>
 
 /* Checked<T>
